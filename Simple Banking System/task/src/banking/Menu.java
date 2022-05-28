@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class Menu {
 
+    public void testForGit() {
+        System.out.println("It's updated on gitHub");
+    }
+
     public void displayMainMenu() {
         System.out.println("1. Create an account");
         System.out.println("2. Log into account");
