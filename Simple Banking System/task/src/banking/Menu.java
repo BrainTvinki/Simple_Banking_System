@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Menu {
 
     public void testForGit() {
-        System.out.println("It's updated on gitHub");
+        System.out.println("And now it new branch");
     }
 
     public void displayMainMenu() {
