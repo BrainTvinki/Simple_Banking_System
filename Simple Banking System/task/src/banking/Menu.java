@@ -5,10 +5,6 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public void testForGit() {
-        System.out.println("And now it new branch");
-    }
-
     public void displayMainMenu() {
         System.out.println("1. Create an account");
         System.out.println("2. Log into account");
@@ -17,7 +13,10 @@ public class Menu {
 
     public void displayLoggedMenu() {
         System.out.println("1. Balance");
-        System.out.println("2. Log out");
+        System.out.println("2. Add income");
+        System.out.println("3. Do transfer");
+        System.out.println("4. Close account");
+        System.out.println("5. Log out");
         System.out.println("0. Exit");
     }
 
@@ -26,7 +25,7 @@ public class Menu {
         System.out.println("Enter the command:");
             try {
                 int command = scanner.nextInt();
-                if(command < 0 || command > 2) {
+                if(command < 0 || command > 5) {
                     throw new IllegalArgumentException();
                 }
                 return command;
@@ -35,11 +34,11 @@ public class Menu {
                 return -1;
             }
     }
+
     public void exit() {
         System.out.println("Bye!");
         System.exit(0);
     }
-
 
 }
 
